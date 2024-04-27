@@ -22,7 +22,6 @@
     width: 48%;
     padding: 5px;
     gap: 25px;
-
 }
 
 .intro-icon {
@@ -67,7 +66,7 @@
     border-radius: 8px;
     width: 40%;
     transition: 0.5s ease-in;
-
+    cursor: pointer;
 }
 
 .intro-button a {
@@ -102,6 +101,7 @@
     padding: 10px;
 }
 
+/* ================== ACCURACY SECTION =================== */
 .accuracy {
     display: flex;
     flex-direction: column;
@@ -163,12 +163,15 @@
     margin-right: 4px;
     text-transform: capitalize;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .accuracy-button-section:hover {
     opacity: .7;
 }
 
+
+/* ==============  MORE FOOTBALL TIPS SECTION  =============== */
 .more-football-tips {
     background-color: var(--white-alt);
     padding: 20px;
@@ -266,6 +269,7 @@
     background-color: var(--secondary-color);
     color: var(--primary-color);
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .more-football-tips-button a {
@@ -275,6 +279,123 @@
     font-weight: 500;
     font-size: var(--footer-links-fs);
     letter-spacing: -.6px;
+}
+
+/*  ============FOOTBALL PREDICTION LEAGUES==============*/
+.football-predictions-by-league {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    margin-bottom: 20px;
+}
+
+.football-predictions-by-league-title h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--title-ff);
+    font-size: var(--text-fs);
+    font-weight: var(--tittle-fw);
+    color: var(--faint-black);
+}
+
+.leagues {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.europa-league,
+.champions-l,
+.english-l {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 18px;
+    padding: 5px;
+    gap: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+}
+
+.europa-league:hover,
+.champions-l:hover,
+.english-l:hover {
+    transform: translateY(-5px);
+}
+
+.league-image {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 60%;
+    object-fit: contain;
+}
+
+.league-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 5px;
+    justify-content: center;
+}
+
+.league-name {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.league-name h3 {
+    font-family: var(--title-ff);
+    font-weight: var(--navbar-fw);
+    font-size: var(--title-fs);
+    letter-spacing: -.60px;
+}
+
+.league-content {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.league-content p {
+    color: var(--faint-black);
+    font-family: var(--title-ff);
+    font-size: 15px;
+    letter-spacing: -.4px;
+    line-height: 25px;
+}
+
+.view-more-leagues {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    width: 15%;
+    background-color: var(--secondary-color);
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.view-more-leagues a {
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-family: var(--navbar-ff);
+    font-size: var(--navbar-fs);
+    letter-spacing: -.5px;
+}
+
+.view-more-leagues:hover {
+    opacity: 0.7;
 }
 
 @media screen and (max-width: 1190px) {

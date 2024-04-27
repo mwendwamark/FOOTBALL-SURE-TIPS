@@ -1,9 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "../Styles/Home.css";
+//images
 import IntroImage from "../assets/intro-image.png";
-
 import tipsImage from "../assets/football-tips.png";
+import Epl from "../assets/epl.jpeg";
+import ChampionsLeague from "../assets/champions-l.png";
+import Europa from "../assets/europa-l.png";
 
 // icons
 import { FaRegBell } from "react-icons/fa";
@@ -13,6 +16,7 @@ import { MdFileDownload } from "react-icons/md";
 const Home = () => {
   return (
     <div className="home-content">
+
       <div className="intro-section container section">
         <div className="intro-section-header">
           <div className="intro-icon">
@@ -86,16 +90,16 @@ const Home = () => {
 
           <div className="more-football-tips-paragraph">
             <p>
-              On our Football Sure Tips app, you’ll find comprehensive
-              match analyses, previews, and predictions for various
-              competitions. Additionally, we provide tips and predictions
-              tailored by league to assist you in making informed decisions.
+              On our Football Sure Tips app, you’ll find comprehensive match
+              analyses, previews, and predictions for various competitions.
+              Additionally, we provide tips and predictions tailored by league
+              to assist you in making informed decisions.
             </p>
           </div>
 
           <div className="more-football-tips-league-list">
             <ol>
-              <li>english preimire league</li>
+              <li>english Premier league</li>
               <li>Champions league</li>
               <li>Spanish La Liga</li>
               <li>MLS</li>
@@ -115,6 +119,76 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <div className="football-predictions-by-league container section">
+        <div className="football-predictions-by-league-title">
+          <h3>Football predictions by league</h3>
+        </div>
+
+        <div className="leagues">
+          <div className="english-l">
+            <div className="league-image">
+              <img src={Epl} alt="" />
+            </div>
+
+            <div className="league-name">
+              <h3>English Premier League predictions</h3>
+            </div>
+
+            <div className="league-content">
+              <p>
+                We cover every English Premier League match, offering a wide
+                range of predictions and tips. With insights on Premier League
+                players and in-depth match analyses, we provide comprehensive
+                coverage of the world’s most popular league.
+              </p>
+            </div>
+          </div>
+
+          <div className="champions-l">
+            <div className="league-image">
+              <img src={ChampionsLeague} alt="" />
+            </div>
+
+            <div className="league-name">
+              <h3>Champions League predictions</h3>
+            </div>
+
+            <div className="league-content">
+              <p>
+                Bringing together top talents from Europe’s major leagues, the
+                Champions League consistently delivers high-quality football.
+                Our free tips match this standard, covering everything from the
+                August qualifiers to the May final.
+              </p>
+            </div>
+          </div>
+
+          <div className="europa-league">
+            <div className="league-image">
+              <img src={Europa} alt="" />
+            </div>
+
+            <div className="league-name">
+              <h3>Europa League predictions</h3>
+            </div>
+
+            <div className="league-content">
+              <p>
+                No European cup competition offers as many matches as the Europa
+                League. From the intense group stage to the thrilling first
+                knockout round featuring 32 teams, we cover every match. Rest
+                assured, you won’t miss out on any action.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="view-more-leagues">
+          <NavLink to="">more leagues</NavLink>
+        </div>
+      </div>
+
     </div>
   );
 };
