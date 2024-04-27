@@ -8,18 +8,20 @@
     --text-ff: Nunito, "sans serif";
     --logo-ff: Alata, "sans serif";
     /* font sizes */
-    --title-fs: 60px;
+    --title-fs: 20px;
     --navbar-fs: 17px;
     --footer-links-fs: 15px;
     --text-fs: 16px;
     --logo-fs: 24px;
     /* font weight */
-    --tittle-fw: 900;
+    --tittle-fw: 700;
     --navbar-fw: 500;
     --text-fw: 400;
     /* colors */
     --primary-color: #f6f6f6;
     --secondary-color: #111111;
+    --white-alt: #e9edf1;
+    --faint-black: #888888;
 
     /*  z-index */
     --z-tooltip: 10;
@@ -52,4 +54,8 @@ ul {
     margin-left: auto;
     margin-right: auto;
     max-width: 95%;
+}
+
+.section{
+    margin-top: 2rem;
 }

@@ -1,0 +1,288 @@
+.home-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+    padding: 18px;
+    color: var(--primary-color);
+}
+
+.intro-section-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 48%;
+    padding: 5px;
+    gap: 25px;
+
+}
+
+.intro-icon {
+    display: flex;
+    align-items: center;
+}
+
+.intro-icon-icon {
+    color: var(--faint-black);
+    margin-right: 4px;
+}
+
+.intro-icon h4 {
+    text-transform: capitalize;
+    font-family: var(--footer-links-ff);
+    letter-spacing: -.7px;
+    color: var(--faint-black);
+}
+
+.intro-title {
+    font-size: var(--title-fs);
+    font-family: var(--title-ff);
+    font-weight: var(--tittle-fw);
+}
+
+.intro-content-p {
+    width: 90%;
+}
+
+.intro-content-p p {
+    font-family: var(--text-ff);
+    font-size: var(--text-fs);
+    font-weight: var(--text-fw);
+    line-height: 25px;
+}
+
+.intro-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    width: 40%;
+    transition: 0.5s ease-in;
+
+}
+
+.intro-button a {
+    color: var(--secondary-color);
+    padding: 12px;
+    font-family: var(--navbar-ff);
+    font-weight: 600;
+    font-size: var(--footer-links-fs);
+    letter-spacing: -.6px;
+}
+
+.intro-button:hover {
+    opacity: 0.5;
+}
+
+.soccer-icon {
+    color: var(--secondary-color);
+}
+
+.intro-section-image {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-section-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.accuracy {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 32px;
+}
+
+.accuracy-small-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: var(--faint-black);
+    font-size: var(--text-fs);
+}
+
+.accuracy-small-header h4 {
+    text-transform: capitalize;
+    font-family: var(--footer-links-ff);
+    letter-spacing: -.7px;
+    margin-left: 4px;
+}
+
+.accuracy-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.accuracy-content h3 {
+    width: 65%;
+    color: var(--secondary-color);
+    font-family: var(--footer-links-ff);
+    font-size: 18px;
+    font-weight: var(--tittle-fw);
+    letter-spacing: -.9px;
+}
+
+.accuracy-button-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--primary-color) !important;
+    background: var(--secondary-color);
+    padding: 12px;
+    border-radius: 10px;
+    transition: .6s;
+}
+
+.accuracy-button-section a {
+    color: var(--primary-color) !important;
+    font-family: var(--navbar-ff);
+    letter-spacing: -.70px;
+    margin-right: 4px;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+
+.accuracy-button-section:hover {
+    opacity: .7;
+}
+
+.more-football-tips {
+    background-color: var(--white-alt);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.more-football-tips-image {
+    width: 48%;
+}
+
+.more-football-tips-image img {
+    object-fit: cover;
+    height: 80%;
+    width: 90%;
+    padding: 10px;
+}
+
+.more-football-tips-content {
+    width: 48%;
+    padding: 10px;
+}
+
+.more-football-tips-small-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    color: var(--faint-black);
+    font-size: var(--text-fs);
+}
+
+.more-football-tips-small-header h4 {
+    text-transform: capitalize;
+    font-family: var(--footer-links-ff);
+    letter-spacing: -.7px;
+    margin-left: 4px;
+}
+
+.more-football-tips-main-header h2 {
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: var(--logo-fs);
+    font-family: var(--title-ff);
+    color: var(--secondary-color);
+}
+
+.more-football-tips-paragraph {
+    padding: 15px;
+    width: 85%;
+}
+
+.more-football-tips-paragraph p {
+    font-size: var(--text-fs);
+    font-family: var(--footer-links-ff);
+    letter-spacing: -.5px;
+    color: var(--faint-black);
+    font-weight: var(--navbar-fw);
+}
+
+.more-football-tips-league-list {
+    padding: 20px;
+}
+
+.more-football-tips-league-list ol {
+    counter-reset: item;
+    list-style-type: none;
+}
+
+.more-football-tips-league-list ol li {
+    counter-increment: item;
+    margin-bottom: 8px;
+    font-family: var(--footer-links-ff);
+    font-size: var(--text-fs);
+    letter-spacing: -.40px;
+    font-weight: var(--navbar-fw);
+    text-transform: capitalize;
+    color: var(--faint-black);
+}
+
+.more-football-tips-league-list ol li:before {
+    content: counter(item) ". ";
+    font-weight: var(--navbar-fw);
+    margin-right: 5px;
+    font-family: var(--footer-links-ff);
+    color: var(--faint-black);
+}
+
+.more-football-tips-button {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 8px;
+}
+
+.more-football-tips-button a {
+    color: var(--primary-color);
+    padding: 12px;
+    font-family: var(--navbar-ff);
+    font-weight: 500;
+    font-size: var(--footer-links-fs);
+    letter-spacing: -.6px;
+}
+
+@media screen and (max-width: 1190px) {
+    .intro-button {
+        width: 47%;
+    }
+
+    .more-football-tips-button {
+        width: 47%;
+    }
+}
