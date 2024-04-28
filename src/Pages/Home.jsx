@@ -8,8 +8,8 @@ import tipsImage from "../assets/football-tips.png";
 import Epl from "../assets/epl.jpeg";
 import ChampionsLeague from "../assets/champions-l.png";
 import Europa from "../assets/europa-l.png";
-import FaqsImage from  "../assets/faqs-image.png";
-import GetItOnGoogle from "../assets/google.png"
+import FaqsImage from "../assets/faqs-image.png";
+import GetItOnGoogle from "../assets/google.png";
 
 // icons
 import { FaRegBell } from "react-icons/fa";
@@ -22,7 +22,12 @@ const Home = () => {
   return (
     <div className="home-content">
       <div className="telegram-icon section">
-        <FaTelegram className="t-icon" /> <NavLink to = "https://t.me/+zplaKMZX9YYyN2Q0"> Join our telegram</NavLink>
+        <NavLink to="https://t.me/+zplaKMZX9YYyN2Q0">
+          {" "}
+          <div className="telegram-icon-s"> <FaTelegram className="t-icon" />
+          Join our telegram</div>{" "}
+         
+        </NavLink>
       </div>
       <div className="intro-section container section">
         <div className="intro-section-header">
@@ -58,7 +63,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="accuracy container section">
+      {/* <div className="accuracy container section">
         <div className="accuracy-small-header">
           <FaRegBell /> <h4>Accurate football prediction</h4>
         </div>
@@ -212,9 +217,9 @@ const Home = () => {
         <div className="faqs-image-section">
           <img src={FaqsImage} alt="" />
         </div>
-      </div>
+      </div> */}
 
-      <div className="download-section">
+      <div className="download-section section">
         <div className="download-header">
           <h2>Download Football Sure Tips app today</h2>
         </div>

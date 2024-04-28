@@ -11,7 +11,10 @@
     background: transparent;
     align-items: center;
 }
-
+.telegram-icon-s{
+    display: flex;
+    align-items: center;
+}
 .t-icon {
     font-size: 30px;
     color: #24A1DE;
