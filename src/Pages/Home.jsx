@@ -1,22 +1,24 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "../Styles/Home.css";
+import Accordion from "../Components/Accordion.jsx";
 //images
 import IntroImage from "../assets/intro-image.png";
 import tipsImage from "../assets/football-tips.png";
 import Epl from "../assets/epl.jpeg";
 import ChampionsLeague from "../assets/champions-l.png";
 import Europa from "../assets/europa-l.png";
+import FaqsImage from  "../assets/faqs-image.png";
 
 // icons
 import { FaRegBell } from "react-icons/fa";
 import { PiSoccerBallFill } from "react-icons/pi";
 import { MdFileDownload } from "react-icons/md";
+import { IoIosColorWand } from "react-icons/io";
 
 const Home = () => {
   return (
     <div className="home-content">
-
       <div className="intro-section container section">
         <div className="intro-section-header">
           <div className="intro-icon">
@@ -189,6 +191,39 @@ const Home = () => {
         </div>
       </div>
 
+      <div className="faqs-section container section">
+        <div className="faqs-contents">
+          <div className="faqs-small-header">
+            <IoIosColorWand className="faqs-icon" /> <h4>Football Sure Tips</h4>
+          </div>
+          <div className="faqs-main-header">
+            <h3>Football Sure Tips FAQs</h3>
+          </div>
+          <div className="faqs-accordion">
+            <Accordion />
+          </div>
+        </div>
+
+        <div className="faqs-image-section">
+          <img src={FaqsImage} alt="" />
+        </div>
+      </div>
+
+      <div className="download-section">
+        <div className="download-header">
+          <h2>Download Football Sure Tips app today</h2>
+        </div>
+        <div className="download-content">
+          <p>
+            Check out the free bets section in the Football Sure Tips app and
+            choose your favorite. It's simple - just download the Football Sure
+            Tips app and you'll have access to free betting tips right away!{" "}
+          </p>
+        </div>
+        <div className="download-link-button">
+          <NavLink to="https://play.google.com/store/apps/details?id=com.newstreak.footballtips">Join Football Sure Tips</NavLink> <PiSoccerBallFill  className="faqs-icon-d"/>
+        </div>
+      </div>
     </div>
   );
 };

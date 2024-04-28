@@ -398,6 +398,113 @@
     opacity: 0.7;
 }
 
+/* ================FAQS SECTION ================== */
+.faqs-section {
+    margin-top: 80px;
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.faqs-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 48%;
+    height: fit-content;
+}
+
+.faqs-small-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.faqs-icon {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.faqs-small-header h4 {
+    text-transform: uppercase;
+    font-family: var(--navbar-ff);
+    letter-spacing: -.7px;
+    font-weight: var(--text-fw);
+    padding: 5px;
+}
+
+.faqs-main-header h3 {
+    text-transform: capitalize;
+    font-size: var(--title-fs);
+    font-family: var(--navbar-ff);
+    padding: 5px;
+}
+
+.faqs-image-section {
+    display: flex;
+    width: 48%;
+}
+
+.faqs-image-section img {
+    width: 100%;
+    height: 60%;
+    object-fit: contain;
+}
+
+/* ==========  DOWNLOAD SECTION ============= */
+
+.download-section {
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.download-content,
+.download-header {
+    padding: 4px;
+}
+
+.download-header h2 {
+    color: var(--primary-color);
+    font-family: var(--title-ff);
+    font-size: var(--logo-fs);
+    font-weight: 500;
+}
+
+.download-link-button {
+    width: 18%;
+    background-color: var(--primary-color);
+    padding: 12px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.download-link-button a {
+    font-family: var(--title-ff);
+    color: var(--secondary-color);
+}
+
+.faqs-icon-d {
+    font-size: var(--title-fs);
+}
+
+.download-content {
+    color: var(--primary-color);
+    font-family: var(--title-ff);
+    font-size: 15px;
+    letter-spacing: -.7px;
+    font-weight: 300;
+}
+
 @media screen and (max-width: 1190px) {
     .intro-button {
         width: 47%;
