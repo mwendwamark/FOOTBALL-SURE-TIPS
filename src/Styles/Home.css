@@ -11,10 +11,12 @@
     background: transparent;
     align-items: center;
 }
-.telegram-icon-s{
+
+.telegram-icon-s {
     display: flex;
     align-items: center;
 }
+
 .t-icon {
     font-size: 30px;
     color: #24A1DE;
@@ -534,12 +536,69 @@
     font-weight: 300;
 }
 
+/* 
 @media screen and (max-width: 1190px) {
-    .intro-button {
-        width: 47%;
-    }
+
 
     .more-football-tips-button {
         width: 47%;
     }
+} */
+
+@media screen and (max-width: 1000px) {
+    .intro-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-section-header {
+        width: 100%;
+    }
+
+    .intro-button {
+        width: 40%;
+    }
+
+    .intro-section-image {
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .intro-section {
+        padding: 8px;
+        background-color: #24A1DE;
+    }
+
+    .intro-section-header {
+        width: 100%;
+    }
+
+    .intro-title h1 {
+        font-size: 24px;
+    }
+
+    .intro-button {
+        width: 100%;
+    }
+
+    .intro-section-image {
+        display: none;
+    }
+
+    .intro-content-p {
+        width: 100%;
+    }
+.intro-icon h4,
+    .intro-icon-icon {
+        color: var(--secondary-color);
+    }
+
+    .download-link-button img {
+        width: 100px;
+    }
+
+
 }
