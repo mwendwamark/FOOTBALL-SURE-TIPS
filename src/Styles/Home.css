@@ -4,6 +4,29 @@
     flex-direction: column;
 }
 
+.telegram-icon {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+    background: transparent;
+    align-items: center;
+}
+
+.t-icon {
+    font-size: 30px;
+    color: #24A1DE;
+}
+
+.telegram-icon a {
+    color: var(--secondary-color);
+    margin-left: 4px;
+    font-family: var(--navbar-ff);
+}
+
+.telegram-icon a:hover {
+    text-decoration: underline;
+}
+
 .intro-section {
     display: flex;
     flex-direction: row;
@@ -479,13 +502,16 @@
 }
 
 .download-link-button {
-    width: 18%;
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     padding: 12px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-radius: 12px;
+}
+
+.download-link-button img {
+    width: 200px;
 }
 
 .download-link-button a {

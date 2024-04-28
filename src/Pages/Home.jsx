@@ -9,16 +9,21 @@ import Epl from "../assets/epl.jpeg";
 import ChampionsLeague from "../assets/champions-l.png";
 import Europa from "../assets/europa-l.png";
 import FaqsImage from  "../assets/faqs-image.png";
+import GetItOnGoogle from "../assets/google.png"
 
 // icons
 import { FaRegBell } from "react-icons/fa";
 import { PiSoccerBallFill } from "react-icons/pi";
 import { MdFileDownload } from "react-icons/md";
 import { IoIosColorWand } from "react-icons/io";
+import { FaTelegram } from "react-icons/fa";
 
 const Home = () => {
   return (
     <div className="home-content">
+      <div className="telegram-icon section">
+        <FaTelegram className="t-icon" /> <NavLink to = "https://t.me/+zplaKMZX9YYyN2Q0"> Join our telegram</NavLink>
+      </div>
       <div className="intro-section container section">
         <div className="intro-section-header">
           <div className="intro-icon">
@@ -221,7 +226,9 @@ const Home = () => {
           </p>
         </div>
         <div className="download-link-button">
-          <NavLink to="https://play.google.com/store/apps/details?id=com.newstreak.footballtips">Join Football Sure Tips</NavLink> <PiSoccerBallFill  className="faqs-icon-d"/>
+          <NavLink to="https://play.google.com/store/apps/details?id=com.newstreak.footballtips">
+            <img src={GetItOnGoogle} alt="" />
+          </NavLink>
         </div>
       </div>
     </div>
