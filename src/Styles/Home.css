@@ -569,7 +569,7 @@
 
     .intro-section {
         padding: 8px;
-        background-color: #24A1DE;
+        background-color: transparent;
     }
 
     .intro-section-header {
@@ -578,10 +578,19 @@
 
     .intro-title h1 {
         font-size: 24px;
+        color: #24A1DE;
     }
 
     .intro-button {
-        width: 100%;
+        background-color: var(--secondary-color);
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .soccer-icon,
+    .intro-button a {
+        color: var(--primary-color);
     }
 
     .intro-section-image {
@@ -590,8 +599,10 @@
 
     .intro-content-p {
         width: 100%;
+        color: var(--secondary-color);
     }
-.intro-icon h4,
+
+    .intro-icon h4,
     .intro-icon-icon {
         color: var(--secondary-color);
     }
