@@ -430,7 +430,7 @@
 .faqs-section {
     margin-top: 80px;
     width: 100%;
-    height: fit-content;
+    /* height: fit-content; */
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -442,7 +442,7 @@
     flex-direction: column;
     gap: 15px;
     width: 48%;
-    height: fit-content;
+    /* height: fit-content; */
 }
 
 .faqs-small-header {
